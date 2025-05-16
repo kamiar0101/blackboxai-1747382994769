@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">MediCalc</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="metriques_sante">Health metrics</string>
+    <string name="suivez_parcours_sante">Track your health journey</string>
+    <string name="Connexion">Log in</string>
+    <string name="adresse_email">Email</string>
+    <string name="mot_passe">Password</string>
+    <string name="avez_vous_compte">Don’t have an account?</string>
+    <string name="Inscrire">Sign up</string>
+    <string name="creez_votre_compte">Create your account</string>
+    <string name="prenom">First name</string>
+    <string name="nom">Last name</string>
+    <string name="confirmer_mot_passe">Confirm password</string>
+    <string name="creer_compte">Create account</string>
+    <string name="Vous_avez_deja_compte">Already have an account?</string>
+    <string name="calculateur_indicateurs_sante">Health Indicators Calculator</string>
+    <string name="calculez_suivez_principaux_indicateurs_sante">Calculate and track your main health indicators</string>
+    <string name="sommeil">Sleep</string>
+    <string name="pourcentage_graisse">Fat Percentage</string>
+    <string name="Poids_deal">Ideal Weight</string>
+    <string name="indice_masse_corporelle">BMI (Body Mass Index)</string>
+    <string name="calculateur_sommeil_sain">Healthy Sleep Calculator</string>
+    <string name="description_sommeil_sain">"Calculate the ideal sleep time based on your age and wake-up time. "</string>
+    <string name="label_age">Age</string>
+    <string name="hint_age_exemple">"For example: 30 "</string>
+    <string name="label_heure_reveil">Wake-up time</string>
+    <string name="btn_calculer_sommeil">Calculate Sleep Schedule</string>
+    <string name="titre_tableau_sommeil">🛌 Your sleep schedule</string>
+    <string name="label_duree_recommandee">Recommended sleep duration:</string>
+    <string name="label_heure_coucher">"Ideal bedtime: "</string>
+    <string name="titre_cycles_sommeil">⏰ Wake-up times by sleep cycles</string>
+    <string name="explication_cycles">If you can’t get a full night\'s sleep, try waking up at these times to feel more refreshed (each sleep cycle lasts 90 minutes):</string>
+    <string name="cycles">cycles</string>
+    <string name="conseil_sommeil">Waking up between sleep cycles can help you feel more refreshed compared to interrupting sleep.</string>
+    <string name="cycle">cycle</string>
+
+    <string name="entrez_age_valide">Please enter a valid age</string>
+    <string name="duree_sommeil_heures">%1$d hours</string>
+    <string name="toast_heure_coucher">🛌 You should go to sleep around %1$s</string>
+    <string name="cycle_sommeil_format">%1$d cycles\n%2$s</string>
+
+
+    <!--pageMainActivite-->
+    <string name="titre_name">Health Indicators Calculator</string>
+    <string name="slogan">Calculate and track your main health indicators</string>
+    <string name="pourcentage_de_matieres_grasses">Fat Percentage</string>
+    <string name="poids_ideal">Ideal Weight</string>
+    <string name="indice_de_masse_corporelle">Mass Index</string>
+
+    <!--pagePoucentageDeMatieresGrasseas-->
+    <!-- Section 1 -->
+    <string name="titre_fat_percentage">Body Fat Percentage</string>
+    <string name="description_fat_percentage">Calculate your body fat percentage using the U.S. Navy method.</string>
+    <string name="genre">Gender</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height (cm)</string>
+    <string name="neck_circumference">Neck Circumference (cm)</string>
+    <string name="waist_circumference">Waist Circumference (cm)</string>
+    <string name="hip_circumference">Hip Circumference (cm)</string>
+    <string name="calculate_fat_percentage">Calculate Body Fat Percentage</string>
+    <string name="exemple_age">e.g., 30</string>
+    <string name="exemple_poids">e.g., 70</string>
+    <string name="exemple_taille">e.g., 175</string>
+    <string name="exemple_Tour_de_cou">e.g., 36</string>
+    <string name="exemple_taille_ceinture">e.g., 80</string>
+    <string name="exemple_Tour_de_hanche">e.g., 95</string>
+
+    <string name="erreur_cou_requis">Please enter the neck circumference</string>
+    <string name="erreur_ceinture_requise">Please enter the waist circumference</string>
+    <string name="erreur_hanche_requise">Please enter the hip circumference</string>
+    <!-- Section 2 -->
+    <string name="fat_percentage_title">% Your Body Fat Percentage</string>
+    <string name="percentage">%</string>
+    <string name="fat_type">Fat Type</string>
+    <string name="description_fat_percentage_detail">Body fat percentage is the total mass of fat divided by the total body mass. The U.S. Navy method is used for this calculation.</string>
+
+    <string name="fat_level_essential">Essential fat</string>
+    <string name="fat_level_athlete">Athlete</string>
+    <string name="fat_level_fitness">Fit</string>
+    <string name="fat_level_average">Average</string>
+    <string name="fat_level_high">High</string>
+    <string name="error_fill_fields">Please fill in all fields correctly</string>
+    <string name="error_select_gender">Please select a gender</string>
+
+    <!--PoidsIdeal-->
+    <string name="titre_calcul_poids">Ideal Weight Calculator</string>
+    <string name="description_poids">Calculate your ideal weight based on your height and gender.</string>
+    <string name="label_genre">Gender</string>
+    <string name="homme">Male</string>
+    <string name="femme">Female</string>
+    <string name="label_taille">Height (cm)</string>
+    <string name="hint_taille">175</string>
+    <string name="bouton_calculer_poids">Calculate Ideal Weight</string>
+    <string name="titre_resultat">Your Ideal Weight</string>
+    <string name="unite_kg">Kg</string>
+    <string name="formule_devine">Devine Formula:</string>
+    <string name="formule_robinson">Robinson Formula:</string>
+    <string name="formule_miller">Miller Formula:</string>
+    <string name="formule_hamwi">Hamwi Formula:</string>
+    <string name="description_resultat">The displayed ideal weight is an average of several formulas. Individual results may vary based on body composition and frame size.</string>
+    <string name="erreur_taille_requise">Please enter your height</string>
+    <string name="error_enter_weight">Please enter the weight</string>
+
+    <!--PageIndiceDeMasseCorporelle-->
+    <string name="bmi_title">Body Mass Index (BMI)</string>
+    <string name="bmi_description">Calculate the Body Mass Index to determine if your weight is healthy for your height.</string>
+    <string name="height_label">Height (cm)</string>
+    <string name="height_hint">175</string>
+    <string name="weight_label">Weight (kg)</string>
+    <string name="weight_hint">70</string>
+    <string name="calculate_bmi_button">Calculate BMI</string>
+    <string name="result_title">Result</string>
+    <string name="progress_scale_0">0%</string>
+    <string name="progress_scale_40">+40%</string>
+    <string name="bmi_description_info">Body Mass Index is a simple calculation using a person’s height and weight. The formula is BMI = kg/m² where kg is weight in kilograms and m² is height in meters squared.</string>
+
+    <string name="underweight">Underweight</string>
+    <string name="normal_weight">Normal Weight</string>
+    <string name="overweight">Overweight</string>
+    <string name="obesity">Obesity</string>
+
+    <string name="required">is required</string>
+    <string name="not_match">does not match</string>
+    <string name="compte_cree_avec_succes">Account created successfully</string>
+    <string name="erreur_creation_compte">Error creating account</string>
+    <string name="connexion_reussie">Login successful</string>
+    <string name="email_ou_mot_passe_incorrect">Email or password incorrect</string>
+</resources>
