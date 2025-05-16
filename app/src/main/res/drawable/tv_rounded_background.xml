@@ -1,0 +1,12 @@
+<!-- res/drawable/textview_rounded_corner.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Couleur de fond -->
+    <solid android:color="#FFFFFF" /> <!-- Bleu -->
+    <!-- Bordure arrondie -->
+    <corners android:radius="14dp" /> <!-- Rayon des coins -->
+    <!-- Bordure (optionnelle) -->
+    <stroke
+        android:width="2dp"
+        android:color="#D3D3D3" /> <!-- Couleur de la bordure -->
+</shape>
