@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حاسبة الصحة</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--pageMainActivity-->
+    <string name="titre_name">حاسبة المؤشرات الصحية</string>
+    <string name="slogan">احسب وتتبع مؤشراتك الصحية الرئيسية</string>
+    <string name="sommeil">النوم</string>
+    <string name="pourcentage_de_matieres_grasses">نسبة الدهون</string>
+    <string name="poids_ideal">الوزن المثالي</string>
+    <string name="indice_de_masse_corporelle">كتلة الجسم</string>
+
+    <!--pageLogin-->
+    <string name="metriques_sante">المقاييس الصحية	</string>
+    <string name="suivez_parcours_sante">تتبع رحلتك الصحية</string>
+    <string name="Connexion"> تسجيل الدخول </string>
+    <string name="adresse_email">بريد إلكتروني</string>
+    <string name="mot_passe">كلمة المرور</string>
+    <string name="avez_vous_compte">ليس لديك حساب؟</string>
+    <string name="Inscrire">اشتراك</string>
+
+    <!--pageInscrire-->
+    <string name="creez_votre_compte">أنشئ حسابك</string>
+    <string name="prenom">الاسم</string>
+    <string name="nom">النسب</string>
+    <string name="confirmer_mot_passe">تأكيد كلمة المرور</string>
+    <string name="creer_compte">إنشاء حساب</string>
+    <string name="Vous_avez_deja_compte">هل لديك حساب بالفعل؟</string>
+
+    <!--pageMainActivite-->
+    <string name="calculateur_indicateurs_sante">حاسبة المؤشرات الصحية</string>
+    <string name="calculez_suivez_principaux_indicateurs_sante">احسب وتتبع مؤشراتك الصحية الرئيسية</string>
+    <string name="pourcentage_graisse">نسبة الدهون</string>
+    <string name="Poids_deal">الوزن المثالي</string>
+    <string name="indice_masse_corporelle">كتلة الجسم</string>
+
+    <!--pageSommeilSain-->
+    <string name="calculateur_sommeil_sain">حاسبة النوم الصحي</string>
+    <string name="description_sommeil_sain">احسب وقت النوم المثالي بناءً على عمرك ووقت استيقاظك.</string>
+    <string name="label_age">العمر</string>
+    <string name="hint_age_exemple">مثلاً، ٣٠</string>
+    <string name="label_heure_reveil">وقت الاستيقاظ</string>
+    <string name="btn_calculer_sommeil">حساب جدول النوم</string>
+    <string name="titre_tableau_sommeil">🛌 جدول نومك</string>
+    <string name="label_duree_recommandee">مدة النوم الموصى بها:</string>
+    <string name="label_heure_coucher">وقت النوم المثالي:</string>
+    <string name="titre_cycles_sommeil">⏰ أوقات الاستيقاظ حسب دورات النوم</string>
+    <string name="explication_cycles">إذا لم تتمكن من الحصول على ليلة نوم كاملة، حاول الاستيقاظ في هذه الأوقات لتشعر بنشاط (كل دورة نوم مدتها ٩٠ دقيقة):</string>
+    <string name="cycle"> دورة </string>
+    <string name="cycles"> دورات </string>
+    <string name="conseil_sommeil">الاستيقاظ بين دورات النوم يمكن أن يساعدك على الشعور بنشاط أكثر مقارنة مع قطع النوم.</string>
+
+    <string name="entrez_age_valide">الرجاء إدخال عمر صحيح</string>
+    <string name="duree_sommeil_heures">%1$d ساعات</string>
+    <string name="toast_heure_coucher">🛌 يجب أن تنام حوالي الساعة %1$s</string>
+    <string name="cycle_sommeil_format">%1$d دورات\n%2$s</string>
+
+    <!--pagePoucentageDeMatieresGrasseas-->
+    <!-- Section 1 -->
+    <string name="titre_fat_percentage">نسبة الدهون في الجسم</string>
+    <string name="description_fat_percentage">احسب نسبة الدهون في جسمك باستخدام طريقة البحرية الأمريكية.</string>
+    <string name="genre">الجنس</string>
+    <string name="age">العمر</string>
+    <string name="weight">الوزن (كجم)</string>
+    <string name="height">الطول (سم)</string>
+    <string name="neck_circumference">محیط الرقبة (سم)</string>
+    <string name="waist_circumference">محیط الخصر (سم)</string>
+    <string name="hip_circumference">محیط الورك (سم)</string>
+    <string name="calculate_fat_percentage">حساب نسبة الدهون</string>
+
+    <string name="erreur_cou_requis">يرجى إدخال محيط الرقبة </string>
+    <string name="erreur_ceinture_requise">يرجى إدخال محيط الخص </string>
+    <string name="erreur_hanche_requise">يرجى إدخال محيط الورك</string>
+
+    <!-- Section 2 -->
+    <string name="fat_percentage_title">% نسبة الدهون في جسمك</string>
+    <string name="percentage">%</string>
+    <string name="fat_type">نوع الدهون</string>
+    <string name="description_fat_percentage_detail">نسبة الدهون في الجسم هي إجمالي كتلة الدهون مقسومة على إجمالي كتلة الجسم. تُستخدم طريقة البحرية الأمريكية لهذا الحساب.</string>
+
+    <string name="fat_level_essential">دهون أساسية</string>
+    <string name="fat_level_athlete">رياضي</string>
+    <string name="fat_level_fitness">جيد</string>
+    <string name="fat_level_average">متوسط</string>
+    <string name="fat_level_high">مرتفع</string>
+    <string name="error_fill_fields">يرجى ملء جميع الحقول بشكل صحيح</string>
+    <string name="error_select_gender">يرجى اختيار الجنس</string>
+
+    <!--PagePoidsIdeal-->
+
+    <string name="titre_calcul_poids">حساب الوزن المثالي</string>
+    <string name="description_poids">احسب وزنك المثالي على بناء على طولك وجنسك.</string>
+    <string name="label_genre">الجنس</string>
+    <string name="homme">ذكر</string>
+    <string name="femme">أنثى</string>
+    <string name="label_taille">الطول (سم)</string>
+    <string name="hint_taille">١٧٥</string>
+    <string name="bouton_calculer_poids">حساب الوزن المثالي</string>
+    <string name="titre_resultat">وزنك المثالي</string>
+    <string name="unite_kg">Kg</string>
+    <string name="formule_devine">صيغة دفين:</string>
+    <string name="formule_robinson">صيغة روبنسون:</string>
+    <string name="formule_miller">صيغة ميلر:</string>
+    <string name="formule_hamwi">صيغة هموي:</string>
+    <string name="description_resultat">الوزن المثالي المعروض هو متوسط لعدة صيغ. قد تختلف النتائج الفردية بناءً على تكوين الجسم وحجم الإطار.</string>
+    <string name="erreur_taille_requise">يرجى إدخال الطول</string>
+    <string name="error_enter_weight">يرجى إدخال الوزن</string>
+
+    <!--PageIndiceDeMasseCorporelle-->
+    <string name="bmi_title">مؤشر كتلة الجسم (BMI)</string>
+    <string name="bmi_description">احسب مؤشر كتلة الجسم لتحديد ما إذا كان وزنك صحيًا بالنسبة لطولك.</string>
+    <string name="height_label">الطول (سم)</string>
+    <string name="height_hint">١٧٥</string>
+    <string name="weight_label">الوزن (كجم)</string>
+    <string name="weight_hint">٧٠</string>
+    <string name="calculate_bmi_button">حساب مؤشر كتلة الجسم</string>
+    <string name="result_title">النتيجة</string>
+    <string name="progress_scale_0">٠%</string>
+    <string name="progress_scale_40">+٤٠%</string>
+    <string name="bmi_description_info">مؤشر كتلة الجسم هو حساب بسيط يستخدم طول الشخص ووزنه. الصيغة هي BMI = كجم/م² حيث كجم هو الوزن بالكيلوغرام و م² هو الطول بالمتر المربع.</string>
+    <string name="exemple_age">مثلاً، ٣٠</string>
+    <string name="exemple_poids">مثلاً، ٧٠</string>
+    <string name="exemple_taille">مثلاً، ١٧٥</string>
+    <string name="exemple_Tour_de_cou">مثلاً، ٣٦</string>
+    <string name="exemple_taille_ceinture">مثلاً، ٨٠</string>
+    <string name="exemple_Tour_de_hanche">مثلاً، ٩٥</string>
+
+    <string name="underweight">نقص الوزن</string>
+    <string name="normal_weight">وزن طبيعي</string>
+    <string name="overweight">زيادة الوزن</string>
+    <string name="obesity">سمنة</string>
+    <string name="required">مطلوب</string>
+    <string name="not_match">لا يتطابق</string>
+    <string name="compte_cree_avec_succes">تم إنشاء الحساب بنجاح</string>
+    <string name="erreur_creation_compte">خطأ في إنشاء الحساب</string>
+    <string name="connexion_reussie">تم تسجيل الدخول بنجاح</string>
+    <string name="email_ou_mot_passe_incorrect">البريد الإلكتروني أو كلمة المرور غير صحيحة</string>
+</resources>
