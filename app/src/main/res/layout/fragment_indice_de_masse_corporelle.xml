@@ -1,0 +1,241 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F9FFFC">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9FFFC">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:background="@drawable/bottom_rounded_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Titre -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bmi_title"
+                android:textColor="#00695C"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bmi_description"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+
+
+            <!-- Longueur -->
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height_label"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etTaille_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/exemple_taille"
+                android:inputType="number"
+                android:background="@drawable/input_background"
+                android:padding="12dp" />
+
+            <!-- Poids -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight_label"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/etPoids_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/exemple_poids"
+                android:inputType="numberDecimal"
+                android:background="@drawable/input_background"
+                android:padding="12dp" />
+
+            <!-- Bouton -->
+            <Button
+                android:id="@+id/btnCalculerGraisseNasseCorporelle_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate_bmi_button"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#009688"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!---->
+        <LinearLayout
+            android:id="@+id/lyIndice_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="30dp"
+            android:background="@drawable/bg_card"
+            app:layout_constraintTop_toBottomOf="@+id/ll1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <!-- Titre -->
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/result_title"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_bmi"/>
+
+            </LinearLayout>
+
+            <!-- Pourcentage -->
+            <TextView
+                android:id="@+id/tvGraisseNasseCorporelle_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="@string/percentage"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+            <!-- Type de graisse -->
+            <TextView
+                android:id="@+id/tvPointNormal_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/blue"
+                app:layout_constraintTop_toBottomOf="@id/percentageText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Barre de progression -->
+            <ProgressBar
+                android:id="@+id/pv_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progress="0"
+                android:max="40"
+                android:progressTint="@color/blue"
+                android:progressDrawable="@drawable/progress_bar"
+                app:layout_constraintTop_toBottomOf="@id/typeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp" />
+
+            <!---->
+            <!-- Échelle de la barre -->
+            <LinearLayout
+                android:id="@+id/scaleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/pv_fragment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/progress_scale_0" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:text="@string/progress_scale_40" />
+            </LinearLayout>
+
+            <!-- Description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/info_background"
+                android:padding="12dp"
+                app:layout_constraintTop_toBottomOf="@id/scaleLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="6dp"
+                    android:src="@drawable/image_info"/>
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bmi_description_info"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
